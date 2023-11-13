@@ -103,9 +103,11 @@ function markToDoItemAsCompleted(todoId) {
 // the function does not need to return anything, though you can return
 // true or false depending on whether the item was successfully deleted
 function deleteToDoItem(todoId) {
-  // Implement the logic to remove a task here
-
-  console.log("NOT YET IMPLEMENTED"); // Remove this line when you start working on the function
+  const initialLength = todoItems.length;
+    todoItems = todoItems.filter(item => item.id !== todoId);
+    const finalLength = todoItems.length;
+    // Return true if an item was removed, false otherwise
+    return finalLength < initialLength;
 }
 
 // Function to clear all completed tasks
