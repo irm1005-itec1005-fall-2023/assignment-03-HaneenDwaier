@@ -74,10 +74,11 @@ console.log(todoItems)
 // that matches the id passed to the function, remove it from the array
 // the function does not need to return anything
 function removeToDoItem(todoId) {
-  // Implement the logic to add a task here
-
-  console.log("NOT YET IMPLEMENTED"); // Remove this line when you start working on the function
+   todoItems = todoItems.filter(item => item.id !== todoId);
 }
+removeToDoItem(1);
+console.log(todoItems)
+  
 
 // Function to mark a task as completed
 // It should accept a number as a parameter (id of the todo item)
