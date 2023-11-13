@@ -64,10 +64,10 @@ function addToDoItem(text) {
   todoItems.push(newTodo);
   newId++; 
 }
-addToDoItem('study for the quiz');
-addToDoItem('cook lunch');
-addToDoItem('call my mom')
-console.log(todoItems)
+//addToDoItem('study for the quiz');
+//addToDoItem('cook lunch');
+//addToDoItem('call my mom')
+//console.log(todoItems)
 
 // Function to remove a todo to the list
 // It should accept a number as a parameter (id of the todo item)
@@ -77,8 +77,8 @@ console.log(todoItems)
 function removeToDoItem(todoId) {
    todoItems = todoItems.filter(item => item.id !== todoId);
 }
-removeToDoItem(1);
-console.log(todoItems)
+///removeToDoItem(1);
+//console.log(todoItems)
   
 
 // Function to mark a task as completed
