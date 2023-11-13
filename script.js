@@ -86,10 +86,13 @@ console.log(todoItems)
 // that matches the id passed to the function, set its completed property to true
 // the function does not need to return anything
 function markToDoItemAsCompleted(todoId) {
-  // Implement the logic to mark a task as completed here
-
-  console.log("NOT YET IMPLEMENTED"); // Remove this line when you start working on the function
+  todoItems.forEach(item => {
+    if (item.id === todoId) {
+        item.completed = true;
+    }
+});
 }
+
 
 // Function to delete a task from the array
 // It should accept a number as a parameter (id of the todo item)
