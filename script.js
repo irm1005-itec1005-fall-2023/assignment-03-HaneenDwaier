@@ -114,9 +114,7 @@ function deleteToDoItem(todoId) {
 // Loop through the array of todos, and when you find a todo item that is marked
 // as completed, remove it completely from the array
 function clearCompletedTasks() {
-  // Implement the logic to clear completed tasks here
-
-  console.log("NOT YET IMPLEMENTED"); // Remove this line when you start working on the function
+  todoItems = todoItems.filter(item => !item.completed);
 }
 
 // You can write your own tests here if you would like to test
