@@ -66,6 +66,7 @@ function addToDoItem(text) {
 }
 addToDoItem('study for the quiz');
 addToDoItem('cook lunch');
+addToDoItem('call my mom')
 console.log(todoItems)
 
 // Function to remove a todo to the list
